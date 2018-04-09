@@ -1,0 +1,70 @@
+{
+  "1234567890123": {
+    "Consumer": {
+      "ReportInformation": {
+        "ReportID": "99",
+        "ReportName": "KYC Report"
+      },
+      "ConsumerDetail": {
+        "DisplayText": "Consumer Detail",
+        "ConsumerID": "1234567",
+        "Initials": "MR",
+        "FirstName": "BOBBY",
+        "SecondName": "JONES",
+        "ThirdName": "",
+        "Surname": "LITTLE",
+        "MaidenName": "",
+        "IDNo": "1234567890123",
+        "PassportNo": "",
+        "BirthDate": "1963-10-26",
+        "Gender": "Male",
+        "TitleDesc": "Mister",
+        "MaritalStatusDesc": "Single",
+        "PrivacyStatus": "DO NOT ACCEPT CONTACTS",
+        "ResidentialAddress": "",
+        "PostalAddress": "",
+        "HomeTelephoneNo": "1234567890",
+        "WorkTelephoneNo": "1234567890",
+        "CellularNo": "1234567890",
+        "EmailAddress": "someone@somewhere.com",
+        "EmployerDetail": "PAWN CITY",
+        "ReferenceNo": "CJ-12345-67890",
+        "ExternalReference": ""
+      },
+      "ConsumerFraudIndicatorsSummary": {
+        "DisplayText": "Consumer Fraud Indicators Summary",
+        "SAFPSListingYN": "No",
+        "HomeAffairsVerificationYN": "Yes",
+        "HomeAffairsDeceasedStatus": "No",
+        "EmployerFraudVerificationYN": "",
+        "ProtectiveVerificationYN": "",
+        "HomeAffairsDeceasedDate": ""
+      },
+      "ConsumerAddressHistory": [
+        {
+          "DisplayText": "Consumer Address History",
+          "ConsumerAddressID": "123456",
+          "AddressType": "Postal",
+          "AddressTypeInd": "P",
+          "Address1": "23 Golfers Road",
+          "Address2": "",
+          "Address3": "",
+          "Address4": "Augusta",
+          "PostalCode": "9999",
+          "Address": "23 Golfers Road Augusta",
+          "LastUpdatedDate": "2014-05-10",
+          "CreatedonDate": "2010-11-11",
+          "SubscriberName": "Vodacom"
+        }
+      ],
+      "SubscriberInputDetails": {
+        "EnquiryDate": "2018-04-06T13:53:33.4896882+02:00",
+        "EnquiryType": "KYC",
+        "SubscriberName": "We wanna know",
+        "SubscriberUserName": "Ben Hoagan",
+        "EnquiryInput": "1234567890123 | LITTLE",
+        "EnquiryReason": ""
+      }
+    }
+  }
+}

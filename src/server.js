@@ -9,7 +9,7 @@ app.use(express.json());
 
 const fakeDb = require('./fakeDb');
 
-app.get("/v1/lookup/idNumber/:idNumber", (req, res) => {
+app.get("/v1/idNumber/:idNumber", (req, res) => {
   const {idNumber} = req.params;
   const ans = fakeDb.findByIdNumber(idNumber);
   if (!ans) {
