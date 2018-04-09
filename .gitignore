@@ -1,3 +1,5 @@
 
 /.idea/
 /node_modules/
+/resources/data.json
+/conf/kubernetes/sprinthive-bureau-data.yaml

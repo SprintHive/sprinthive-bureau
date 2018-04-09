@@ -29,6 +29,14 @@ spec:
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
+        volumeMounts:
+        - name: sprinthive-bureau-data
+          mountPath: "/resources"
+          readOnly: true
+      volumes:
+      - name: sprinthive-bureau-data
+        secret:
+          secretName: sprinthive-bureau-data
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler

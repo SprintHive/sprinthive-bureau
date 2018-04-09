@@ -7,10 +7,17 @@ const port = process.env.PORT || 3701;
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("hello")
-});
+const fakeDb = require('./fakeDb');
 
+app.get("/v1/lookup/idNumber/:idNumber", (req, res) => {
+  const {idNumber} = req.params;
+  const ans = fakeDb.findByIdNumber(idNumber);
+  if (!ans) {
+    res.status(404).send({message: "Could not find anything, sorry for you..."});
+  } else {
+    res.send(ans);
+  }
+});
 const server = http.listen(port, () => {
   const port = server.address().port;
 console.log(`Http server listening at http://localhost:${port}`);
